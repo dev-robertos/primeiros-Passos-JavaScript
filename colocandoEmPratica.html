@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colocando em Prática</title>
+
+    <!------------ INÍCIO CSS ------------>
+    <style>
+        body { 
+            font: normal 24pt "Calibri Light";
+        }
+
+        h1 {
+            font: italic bold 30pt "Calibri";
+        }
+    </style>
+    <!------------ FIM CSS ------------>
+
+  </head>
+  <br />
+  <body>
+
+    <!------------ INÍCIO HTML ------------>
+    
+    <!------------ FIM HTML ------------>
+
+    <!------------ INÍCIO JS ------------>
+    <script>
+        // DECLARAÇÃO DE VARIÁVEIS:
+        var nome = window.prompt(`Qual é o seu nome?`)
+        var sexo = window.prompt(`Qual é o seu gênero? Digite:
+        "M" para masculino
+        "F" para feminino`)
+
+        // CORPO DO CÓDIGO: TEXTO, MENSAGENS, INFORMAÇÕES E FUNCIONALIDADES
+    
+        // TÍTULO DO PROJETO
+        document.write(`<h1>Colocando em Prática</h1>`)
+       
+        // ESTRUTURA DE DECISÃO
+
+        // MENSAGEM DE BOAS VINDAS
+
+        // Para exibir uma mensagem de boas-vindas personalizada, solicitei que o usuário identifique seu gênero. Orientei a forma como o usuário deve informar seu gênero para que corresponda aos parâmetros da estrutura de decisão.
+
+        // Utilizei o comando toUpperCase() para garantir que a comparação seja feita de forma consistente, independentemente de o usuário digitar "M" ou "m" (ou "F" ou "f").
+
+        if (sexo.toUpperCase().trim() === "M") {
+            document.write(`Bem-vindo, <strong>${nome}</strong>!</br></br>`)
+        } else if (sexo.toUpperCase().trim() === "F") {
+            document.write(`Bem-vinda, <strong>${nome}</strong>!</br></br>`)
+        } else {
+            document.write(`Gênero não informado corretamente.</br></br>`)
+        }
+
+        window.alert(`A seguir, você precisará informar dois números que, somados, resultem no número 12. Pense em diferentes maneiras de chegar a esse resultado.`)
+
+        var num1 = Number(window.prompt(`Informe o primeiro número:`))
+        var num2 = Number(window.prompt(`Informe o segundo número:`))
+
+        // ESTRUTURA DE REPETIÇÃO
+
+        // Para garantir que o usuário informe dois números que, somados, resultem no número 12, utilizei uma estrutura de repetição que solicita os números até que a soma seja igual a 12. Caso a soma não seja igual a 12, uma mensagem de alerta é exibida informando que a soma dos números informados não é igual a 12 e solicitando que o usuário tente novamente.
+
+        while (num1 + num2 !== 12) {
+            window.alert(`A soma dos números informados não é igual a 12. Tente novamente.`)
+        }
+
+        window.confirm(`Você conseguiu! A soma dos números informados é igual a 12. Tenha paciência, estamos terminando.`)
+
+        var cor = window.prompt(`Qual é a sua cor favorita?`)
+        var serie = window.prompt(`Qual sua série favorita?`)
+        var musica = window.prompt(`Qual é a sua música favorita?`)
+
+        // TEXTO DE APRESENTAÇÃO DO PROJETO
+
+        // Optei por colocar o texto dentro do JavaScript para colocar em prática o comando document.write() e me familiarizar com o uso das tags HTML dentro do JavaScript.
+
+        document.write(`Esse é um projeto próprio que criei com o intuito de colocar em prática o que tenho aprendido em JavaScript.</br></br>`)
+        
+        document.write(`Foram utilizados comandos que aprendi durante as aulas de JavaScript do Curso em Vídeo com o Prof. Gustavo Guanabara. Entre os comandos, posso citar: <strong>window.prompt(), window.alert(), window.confirm()</strong> e Number(). Há também a declaração de variáveis, uso de funções, manipulação de strings e comentários descritivos do código. </br></br>`)
+
+        document.write(`Utilizei também comandos de estrutura de decisão e repetição que aprendi enquanto desenvolvia lógica de programação com C# no curso técnico em Desenvolvimento de Sistemas da Etec Drª Ruth Cardoso com a Prof.ª Roseli Rocha e o Prof.º Maikel Linares.</br></br>`)
+
+        document.write(`
+        Nome: ${nome}</br>
+        Cor: ${cor}</br>
+        Série: ${serie}</br>
+        Música: ${musica}</br>`)
+
+
+    </script>
+    <!------------ FIM JS ------------>
+
+  </body>
+</html>
