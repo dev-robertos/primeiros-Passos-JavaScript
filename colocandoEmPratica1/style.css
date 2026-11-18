@@ -1,0 +1,127 @@
+/*CSS CRIADO POR IA*/
+
+/*IA utilizada: chatGPT*/
+
+/*PROMPT: Chat, crie um CSS que tenha a ver com o código.
+Estilo simples, minimalista, de fácil compreensão e moderno.*/
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+h1 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2563eb;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Campo de entrada */
+input {
+    width: 280px;
+    max-width: 100%;
+    padding: 12px 15px;
+
+    font-size: 1rem;
+    color: #334155;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+/* Botão */
+button {
+    padding: 12px 22px;
+    margin-left: 8px;
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Área de resultados */
+#res {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: #f8fafc;
+    color: #334155;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+
+    line-height: 2;
+    font-size: 1rem;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        display: block;
+        margin: 12px 0 0;
+        width: 100%;
+    }
+}
